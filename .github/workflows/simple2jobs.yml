@@ -1,6 +1,6 @@
-name: Shell Commands
+name: Shell Commands Python
 
-on: [pull_request]
+on: [push]
 
 jobs:
   run-shell-command:
@@ -12,3 +12,8 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: python Command
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
