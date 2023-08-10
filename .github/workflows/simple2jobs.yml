@@ -1,4 +1,4 @@
-name: Shellx Commands Python
+name: Shell Commands Python
 
 on: [push]
 
